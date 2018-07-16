@@ -1,0 +1,8 @@
+:3002 {
+    cors / http://localhost {
+      allowed_headers Authorization
+    }
+    startup cmd.exe /c start api -development
+    shutdown taskkill /IM api.exe /F
+    proxy / 127.0.0.1:2402
+}

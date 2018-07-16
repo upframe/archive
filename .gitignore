@@ -1,0 +1,5 @@
+debug
+config.json
+*.log
+*.xlsx
+*.csv
