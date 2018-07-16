@@ -1,0 +1,28 @@
+{
+    "servers": {
+        "NodeJS_1": {
+            "site": "http://localhost:8080"
+        },
+        "PHP_1": {
+            "site": "http://localhost:8000"
+        }
+    },
+
+    "routes": {
+        "/signup": {
+            "language": "NodeJS",
+            "server": "NodeJS_1",
+            "path": "/signup"
+        },
+        "/login": {
+            "language": "NodeJS",
+            "server": "NodeJS_1",
+            "path": "/login"
+        },
+        "search": {
+            "language": "NodeJS",
+            "server": "NodeJS_1",
+            "path": "/search/{search}/{page}"
+        }
+    }
+}
